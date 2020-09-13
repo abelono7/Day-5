@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+var obj = {a: 'Custom'};
+var a = 'Global';
+function whatsThis() {
+  console.log(this.a);
+}
+
+whatsThis();          
+whatsThis.call(obj);  
+whatsThis.apply(obj); 
+</script>
+</body>
+</html>
